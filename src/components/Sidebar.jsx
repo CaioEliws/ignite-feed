@@ -4,13 +4,15 @@ import styles from './Sidebar.module.css'
 
 import studioImage from '../assets/studiodev-image.jpg'
 
+import { Avatar } from './Avatar';
+
 export function Sidebar() {
     return (
         <aside className={styles.sidebar}>
             <img src={studioImage} className={styles.cover} />
 
             <div className={styles.profile}>
-                <img src="https://github.com/caioeliws.png" className={styles.avatar} />
+                <Avatar src="https://github.com/caioeliws.png" />
 
                 <strong>Caio Elias Vieira</strong>
                 <span>Web Developer</span>
